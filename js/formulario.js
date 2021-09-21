@@ -1,9 +1,10 @@
+//SECCION FORMULARIO CON DATOS DEL PASAJERO
+
 //titulo
 $('#titulo').append(`<h1>Disfrutá tu viaje, nosotros nos encargamos del resto.</h1>`);
 $("h1").css("color","black")
 $("h1").css("font-size","35px")
 
-        
 
 
 //formulario
@@ -101,6 +102,8 @@ function validarFormulario(e){
 
 
 
+
+
     //Cantidad de pasajeros//
     //Adultos
 
@@ -163,7 +166,8 @@ function validarFormulario(e){
 
 
     precioTotal = Math.round(resultado * 1,21);
-
+    
+    
 
          
 
@@ -200,12 +204,6 @@ function validarFormulario(e){
                             
                         </div>`);
         
-    // $('#popup').css("display","flex");
-    // $('#popup').css("aling-items","center");
-
-                    
-
-
 
 
 
@@ -230,7 +228,7 @@ function validarFormulario(e){
 
 
 
-
+//CÁLCULO DE DIAS DE VIAJE
 function calculardiasDiscount() {
     var timeStart = new Date(document.getElementById("start").value);
     var timeEnd = new Date(document.getElementById("finish").value);
@@ -247,13 +245,12 @@ function calculardiasDiscount() {
 }
 
 
-
-
 function noMostrar(){
     $('#popup').empty();
     $('#popup').hide();
     $('#formulario').show();
 
-
- 
 }
+
+
+

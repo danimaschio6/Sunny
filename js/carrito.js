@@ -1,3 +1,6 @@
+//CARRITO DE PRODUCTOS EXTRA:
+
+
 //titulo
 $('#beneficios').append("Seleccioná que beneficios te gustaría agregar a tu seguro.");
 $("#beneficios").css("color","black")
@@ -103,10 +106,10 @@ function renderizarProductos() {
         // Calculo el total
         calcularTotal();
 
-        // Actualizamos el carrito 
+        // Actualizo el carrito 
         renderizarCarrito();
 
-        // Actualizamos el LocalStorage
+        // Actualizo el LocalStorage
         guardarCarritoEnLocalStorage();
 }
 
@@ -152,9 +155,9 @@ function renderizarCarrito() {
     });
 }
 
-/**
-* Evento para borrar un elemento del carrito
-*/
+
+/**Borrar un elemento del carrito*/
+
 function borrarItemCarrito(evento) {
     // Obtenemos el producto ID que hay en el boton pulsado
     const id = evento.target.dataset.item;
@@ -172,14 +175,12 @@ function borrarItemCarrito(evento) {
 }
 
 /**
-* Calcula el precio total teniendo en cuenta los productos repetidos
+* Calcular el precio total teniendo en cuenta los productos repetidos
 */
-
 
 function calcularTotal() {
 
     // Limpiamos precio anterior
-
     total = 0;
     // Recorremos el array del carrito
     carrito.forEach((item) => {
@@ -218,6 +219,24 @@ function cargarCarritoDeLocalStorage () {
         carrito = JSON.parse(miLocalStorage.getItem('carrito'));
     }
 }
+
+
+
+
+//boton realizar compra//
+
+function realizarCompra(){
+    swal("Gracias por su compra!");
+    vaciarCarrito();
+
+}
+
+var botoncompra = document.getElementById("boton-comprar");
+botoncompra.addEventListener("click",realizarCompra);
+
+
+
+
 
 // Eventos
 DOMbotonVaciar.addEventListener('click', vaciarCarrito);

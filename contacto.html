@@ -36,7 +36,7 @@
             <ul>
               <li><a href="formulario.html">Inicio</a></li>            
               <li  class="submenu">
-                  <a href=" # "> Servicios </a>
+                  <a href="carrito.html"> Servicios </a>
               </li>
               <li><a href="">Testimonios</a></li>                                
               <li><a href="contacto.html">Contacto</a></li>
@@ -65,33 +65,36 @@
 <main id="mainContacto">
 
 
-    <div id="form">
+    <form id="formulario">
 
 
-            Nombre <input type="text" placeholder="Nombre" class="imputComentario" required>
+            Nombre <input type="text" placeholder="Nombre" class="imputComentario" id="nombre" required>
     
             <br>
             <br>
 
-            Email <input type="email" placeholder="Email" class="imputComentario" required>
+            Email <input type="email" placeholder="Email" class="imputComentario" id="email" required>
     
+ 
            
             <br>
             <br>
 
 
             Comentario <br>
-            <input type="text" required id="comentarioContactos" class="imputComentario"> 
+            <input type="text" required id="comentarioContactos" class="imputComentario" id="comentario"> 
             <br>
             <br>
 
 
     
-            <input type="submit" class="btn btn-primary" id="boton" onclick="mensaje()">
+            <input type="submit" class="btn btn-primary" id="boton" onclick="mensaje()"> 
+
+
     
         
-        </div>
-    
+    </form>
+
     
     </div>
     
@@ -100,8 +103,18 @@
 
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
    
-<footer>
+<footer style="position: fixed; bottom: 0;">
 
         <ul>
             <li>
