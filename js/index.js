@@ -176,7 +176,7 @@ function validarFormulario(e){
     // POP UP CON JQUERY//
 
     $('#popup').show();
-    $("#popup").animate({  left:'250px', opacity:'0.80', height:'500px', width:'850px'}, 
+    $("#popup").animate({  left:'250px', opacity:'0.80', height:'300px', width:'700px'}, 
                             "slow",            
                             function(){        
                                 console.log("Gracias por visitarnos!");
