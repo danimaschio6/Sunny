@@ -248,6 +248,7 @@ function realizarCompra(){
                             <div>
                                 Su compra fue realizada con éxito.
                                 <a href="index.html"><button class="btn btn-primary">Volver al Inicio</button></a>
+                                <a href="carrito.html"><button class="btn btn-primary">Modificar extras</button></a>
                             </div>
                             <br><br> 
                        
