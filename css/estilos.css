@@ -210,8 +210,8 @@ header #logo img {
 }
 
 #formulario{
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 15px;
 }
 
 
@@ -221,7 +221,7 @@ header #logo img {
 
 #mainContacto{
     margin-left: 18%;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 10%;
     background-color: white;
     width: 800px;
@@ -252,7 +252,16 @@ header #logo img {
 }
 
 
+/* style="position: absolute; right: 50%; left: 50%; top: 50%;" */
 
+
+#box-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Diseño responsive  */
 @media (max-width: 801px){
 
     #mainContacto{
